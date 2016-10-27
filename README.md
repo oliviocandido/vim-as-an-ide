@@ -7,7 +7,7 @@ while ssh'ed are missing out on the vast power that lies within Vim.
 
 There are two fronts to having an amazing Vim experience:
 
-1. knowing how to manipulate text using Vim's built in keyboard shortcuts
+1. knowing how to manipulate text using Vim's built in keyboard shortcuts;
 2. having plugins that make Vim behave like users would expect from a modern
    text editor.
 
@@ -31,10 +31,10 @@ diff(erence) of exactly what changed from step-to-step.
 
 This is what you should do:
 
-- start at the [first commit](https://github.com/jez/vim-as-an-ide/commit/0673f0c)
-- read the commit message and GitHub comments
-- copy the changes
-- repeat
+- start at the [first commit](https://github.com/jez/vim-as-an-ide/commit/0673f0c);
+- read the commit message and GitHub comments;
+- copy the changes;
+- repeat.
 
 It's that simple. Depending on how fast you read and how in-depth you want to
 go, you could easily have a fully-configured\* Vim setup in about an hour.
@@ -45,22 +45,22 @@ the GitHub comments, so be sure to check them out.
 
 ### Table of Contents
 
-*  [Create vimrc file](https://github.com/jez/vim-as-an-ide/commit/0673f0c)
-*  [Add some general settings](https://github.com/jez/vim-as-an-ide/commit/dff7da3)
-*  [Enable the mouse](https://github.com/jez/vim-as-an-ide/commit/fc77b04)
-*  [Set up Vundle boilerplate](https://github.com/jez/vim-as-an-ide/commit/1186be2)
-*  [Make Vim look good](https://github.com/jez/vim-as-an-ide/commit/457f2e2)
-*  [Plugins NERDTree and NERDTree Tabs](https://github.com/jez/vim-as-an-ide/commit/b7ff90c)
-*  [Plugin Syntastic](https://github.com/jez/vim-as-an-ide/commit/144f979)
-*  [Plugins vim-easytags and tagbar](https://github.com/jez/vim-as-an-ide/commit/fd2c49c)
-*  [Plugin ctrlp](https://github.com/jez/vim-as-an-ide/commit/80db74f)
-*  [Plugin A.vim](https://github.com/jez/vim-as-an-ide/commit/8d4223f)
-*  [Plugins vim-gitgutter and vim-fugitive](https://github.com/jez/vim-as-an-ide/commit/1e5757e)
-*  [Plugin delimitMate](https://github.com/jez/vim-as-an-ide/commit/2fe0507)
-*  [Plugin vim-superman](https://github.com/jez/vim-as-an-ide/commit/b185e9f)
-*  [Plugin vim-tmux-navigator](https://github.com/jez/vim-as-an-ide/commit/44f5225)
-*  [Syntax plugins](https://github.com/jez/vim-as-an-ide/commit/5ba534e)
-*  [Add all the extra plugins that I use](https://github.com/jez/vim-as-an-ide/commit/9089a95)
+*  [Create vimrc file](https://github.com/jez/vim-as-an-ide/commit/0673f0c);
+*  [Add some general settings](https://github.com/jez/vim-as-an-ide/commit/dff7da3);
+*  [Enable the mouse](https://github.com/jez/vim-as-an-ide/commit/fc77b04);
+*  [Set up Vundle boilerplate](https://github.com/jez/vim-as-an-ide/commit/1186be2);
+*  [Make Vim look good](https://github.com/jez/vim-as-an-ide/commit/457f2e2);
+*  [Plugins NERDTree and NERDTree Tabs](https://github.com/jez/vim-as-an-ide/commit/b7ff90c);
+*  [Plugin Syntastic](https://github.com/jez/vim-as-an-ide/commit/144f979);
+*  [Plugins vim-easytags and tagbar](https://github.com/jez/vim-as-an-ide/commit/fd2c49c);
+*  [Plugin ctrlp](https://github.com/jez/vim-as-an-ide/commit/80db74f);
+*  [Plugin A.vim](https://github.com/jez/vim-as-an-ide/commit/8d4223f);
+*  [Plugins vim-gitgutter and vim-fugitive](https://github.com/jez/vim-as-an-ide/commit/1e5757e);
+*  [Plugin delimitMate](https://github.com/jez/vim-as-an-ide/commit/2fe0507);
+*  [Plugin vim-superman](https://github.com/jez/vim-as-an-ide/commit/b185e9f);
+*  [Plugin vim-tmux-navigator](https://github.com/jez/vim-as-an-ide/commit/44f5225);
+*  [Syntax plugins](https://github.com/jez/vim-as-an-ide/commit/5ba534e);
+*  [Add all the extra plugins that I use](https://github.com/jez/vim-as-an-ide/commit/9089a95).
 
 As you're following along these steps, if you want to check whether what you see
 matches up with what my setup looks like after a given step, jump over to [this
@@ -71,16 +71,16 @@ post](http://blog.jez.io/2015/03/03/vim-as-an-ide/).
 
 If you just want to use this file as your vimrc, no questions asked,
 
-1. Move your ~/.vimrc file and ~/.vim folder somewhere else for now.
-2. [Download Vundle](https://github.com/jez/vim-as-an-ide/commit/1186be2)
-3. [Change your terminal colorscheme to solarized](https://github.com/jez/vim-as-an-ide/commit/457f2e2)
-4. [Install a patched font](https://github.com/jez/vim-as-an-ide/commit/457f2e2)
-5. Download the file [vimrc.vim](/vimrc.vim) and rename it to ~/.vimrc
-6. Run `vim +PluginInstall +qall`
-7. ???
-8. Profit!
+1. Move your ~/.vimrc file and ~/.vim folder somewhere else for now;
+2. [Download Vundle](https://github.com/jez/vim-as-an-ide/commit/1186be2);
+3. [Change your terminal colorscheme to solarized](https://github.com/jez/vim-as-an-ide/commit/457f2e2);
+4. [Install a patched font](https://github.com/jez/vim-as-an-ide/commit/457f2e2);
+5. Download the file [vimrc.vim](/vimrc.vim) and rename it to ~/.vimrc;
+6. Run `vim +PluginInstall +qall`;
+7. ???;
+8. Profit!.
 
-But you should really look through the steps for more information about what went down. Remember: every time you add a new `Plugin ...` line, you'll have to run
+But you should really look through the steps for more information about what went down. Remember: every time you add a new `Plugin ...` line, you'll have to run.
 
 ```
 vim +PluginInstall +qall
